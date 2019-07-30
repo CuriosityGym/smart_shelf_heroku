@@ -1,25 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Heroku Flask Template</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    </head>
-    <body>
-        <h1 id="tittle">Heroku Flask Template</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="https://github.com/vetronus/heroku-flask-template">SOURCE CODE(GitHub)</a></li>
-                <li><a href="http://parthsarthee.com/">PARTH SARTHEE(Author)</a></li>
-                <li><a href="http://aroxbit.com">AROXBIT(Awesome Indie Startup)</a></li>
-            </ul>
-        </nav>
-        <h2>What is Heroku Flask Template</h2>
-        <p>
-            Heroku Flask Template is a simple web app programmed in Python-3 using flask micro-framework. It is created for begginers to understand the basics of creating a flask web app and deploying it on the Heroku. It can also be used as a template to create your new flask web apps which can then easily be deployable on Heroku.
-        </p><br>
-        <h3>You can download this plugin, or modify its source code from <a href="https://github.com/vetronus/heroku-flask-template">GitHub</a></h3>
-    </body>
+<html>
+<head>
+<style>
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix .btn {
+  position: relative;
+  top: 100%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.clearfix .btn:hover {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Inventory</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
+    </a>
+    <div class="desc">quantity</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="400" height="400">
+    </a>
+    <div class="desc">quantity</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">quantity</div>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <button class="btn">Dashboard</button>
+</div>
+
+</body>
 </html>
