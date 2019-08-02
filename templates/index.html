@@ -3,9 +3,7 @@
 <head>
 <style>
 
-div.gallery {
-  border: 1px solid #ccc;
-}
+
 
 div.gallery:hover {
   border: 1px solid #777;
@@ -91,7 +89,7 @@ div.desc {
   <div class="gallery">
     <a target="_blank" href="bottle.jpg">
       
-      <img src="{{url_for('static', filename='chips.jpg')}}" alt="Chips" width="400" height="400"/>
+      <img src="{{url_for('static', filename='bottle.jpg')}}" alt="Chips" width="400" height="400"/>
     </a>
     <div class="desc">quantity</div>
   </div>
@@ -101,7 +99,7 @@ div.desc {
   <div class="gallery">
     <a target="_blank" href="books.jpg">
       
-      <img src="{{url_for('static', filename='chips.jpg')}}" alt="Chips" width="400" height="400"/>
+      <img src="{{url_for('static', filename='books.jpg')}}" alt="Chips" width="400" height="400"/>
     </a>
     <div class="desc">quantity</div>
   </div>
@@ -112,7 +110,7 @@ div.desc {
 <div class="clearfix"></div>
 
 <div style="padding:6px;">
-  <button class="btn">Dashboard</button>
+  <button class="btn" onclick="window.location.href = 'https://shelfsmart.herokuapp.com/dashboard;>Dashboard</button>
 </div>
 
 </body>
